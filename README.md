@@ -7,11 +7,11 @@ Build a content-based anime recommendation engine using unsupervised learning (c
 
 ## About the Project 📘  
 This project was developed as part of a 4-week Internship Program organized by Edunet Foundation on AI with Azure, starting 13th May 2025. The internship provided hands-on experience with real-world AI applications.  
-The system recommends anime titles based on textual features like synopsis and genre, grouped using clustering algorithms such as K-Means. 📊
+The system recommends anime titles based on textual features like synopsis and genre, grouped using clustering algorithms such as K-Means. 
 
 ---
 
-## Visual Overview  
+## Visual Overview  📊
 ![Project Overview](./project_overview.png)  
 *A concise image explaining the project flow and technologies used.* 🖼️
 
