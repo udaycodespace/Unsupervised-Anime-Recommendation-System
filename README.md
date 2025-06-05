@@ -1,101 +1,91 @@
-# Project Title: Unsupervised Anime Recommendation System 🎯
+
+# Anime Recommender using Unsupervised Learning 🎯
 
 ## Objective 🔍  
-Build a content-based anime recommendation engine using unsupervised learning (clustering) without relying on any user preference history.
+Build a content-based anime recommendation system using clustering—no user history required.
 
 ---
 
 ## About the Project 📘  
-This project was developed as part of a 4-week Internship Program organized by Edunet Foundation on AI with Azure, starting 13th May 2025. The internship provided hands-on experience with real-world AI applications.  
-The system recommends anime titles based on textual features like synopsis and genre, grouped using clustering algorithms such as K-Means. 
+Developed during a 4-week AI + Azure Internship (May 2025) by **Edunet Foundation**, this project recommends anime titles using unsupervised learning (K-Means) based on synopsis and genre.
 
 ---
 
-## Visual Overview  📊
-![Project Overview](./project_overview.png)  
-*A concise image explaining the project flow and technologies used.* 🖼️
+## Project Workflow 📊  
+![Overview](./project_overview.png)  
+*A visual summary of data flow and tools used.*
 
 ---
 
-## How It Works 🛠️  
+## Methodology 🛠️  
 
-1. **Load Dataset**: Anime dataset with titles, genres, synopsis, and scores.  
-2. **Preprocess Text**: Clean and vectorize synopses using TF-IDF.  
-3. **Clustering**: Apply K-Means to cluster similar anime titles.  
-4. **Recommend**: For a selected anime, recommend others from the same cluster. 🔄
-
----
-
-## Example Use Case 💡  
-**Input**: Recommend anime similar to _"Naruto"_  
-**Output**: Returns titles with similar themes like _"Angel Beats!"_, _"Platinum End"_, etc. 🎥
+1. **Load Data**: Anime info including synopsis, genres, and scores.  
+2. **Preprocessing**: Clean and vectorize synopses using **TF-IDF**.  
+3. **Clustering**: Apply **K-Means** to group similar anime.  
+4. **Recommendation**: Suggest titles from the same cluster as input anime.
 
 ---
 
-## How to Run ▶️  
-
-1. Open the Jupyter Notebook `Unsupervised_Anime_Recommendation_System.ipynb` in Google Colab or your local environment.
-2. Run all cells sequentially:
-    - Load and explore dataset
-    - Preprocess and vectorize data
-    - Fit K-Means model
-    - Enter an anime title and get recommendations 💻
+## Example 💡  
+**Input**: `"Naruto"`  
+**Output**: Similar anime like _"Angel Beats!"_, _"Platinum End"_ etc. 🎥
 
 ---
 
-## Tools and Technologies Used 🧰  
-- Python (Google Colab)  
-- Pandas, NumPy  
-- Scikit-learn (TF-IDF & KMeans)  
-- Matplotlib / Seaborn *(optional for visualization)*  
-- NLTK *(optional for text preprocessing)* 🧪
+## Run Instructions ▶️  
 
----
-
-## Sample Test Cases 🧪  
+1. Open `Unsupervised_Anime_Recommendation_System.ipynb` in Google Colab or locally.  
+2. Execute all cells:  
+    - Load dataset  
+    - Preprocess & vectorize  
+    - Fit model  
+    - Call the function below:
 
 ```python
 get_recommendations('Death Note')
 get_recommendations('Naruto')
-get_recommendations('Blx')  # typo test with fuzzy matching
+get_recommendations('Bleecu')  # typo test with fuzzy matching
 ```
 
 ---
 
-## Future Enhancements 🔮  
-
-- Build a web app interface (Flask or Streamlit)  
-- Integrate collaborative filtering for better personalization  
-- Expand dataset with user reviews and ratings  
-- Add filters (e.g., genre, score range) 🚀
+## Tech Stack 🧰  
+- Python (Colab)  
+- `pandas`, `numpy`, `scikit-learn`  
+- `matplotlib`, `seaborn` (optional for visuals)  
+- `nltk` (optional for NLP)
 
 ---
 
-## Credits 🙌  
+## Future Scope 🔮  
 
-Project adapted from the work of [Rohit Shelar](https://github.com/therohitshelar97/MovieRecommendationUsingUnsupervisedLearning/blob/main/Movie%20Recommendation.ipynb)
+- Web interface (Flask/Streamlit)  
+- Add collaborative filtering  
+- Include user reviews  
+- Filter-based recommendations (genre/score)
 
-Special thanks to our mentors:
-- Rohit Shelar (Sir)
-- Karthiga S (Mam)
-- Thoquif (Sir) 🙏
+---
 
-Their guidance was invaluable throughout this internship.
+## Mentors & Inspiration 🙌  
+
+Inspired by [Rohit Shelar Sir](https://github.com/therohitshelar97/MovieRecommendationUsingUnsupervisedLearning/blob/main/Movie%20Recommendation.ipynb)  
+Guided by:  
+- **Rohit Shelar Sir**  
+- **Karthiga S Mam**  
+- **Thoufiq Ahmad Sir**
 
 ---
 
 ## Author 📌  
-
 **Somapuram Uday**  
-4th Year Computer Science Student  
-GPREC(A), Kurnool, Andhra Pradesh  
-Intern at Edunet Foundation AI + Azure Virtual Internship 🎓
+Final Year CSE Student, GPREC(A), Kurnool, AP  
+Intern – Edunet Foundation | AI + Azure Virtual Internship 🎓
 
 ---
 
-## What to Do Next ✅  
+## Next Steps ✅  
 
-- Clone this repo  
-- Run the notebook in Google Colab or your local environment  
-- Feel free to improve the project and contribute  
-- For suggestions or improvements, contact me! 📬
+- Fork & clone this repo  
+- Run the notebook  
+- Suggest or contribute improvements  
+- Reach out for feedback or collaboration! 💬
