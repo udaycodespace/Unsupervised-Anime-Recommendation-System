@@ -42,9 +42,9 @@ Developed during a 4-week AI + Azure Internship (May 2025) by **Edunet Foundatio
     - Call the function below:
 
 ```python
-get_recommendations('Death Note')
+get_recommendations('Bleach') 
 get_recommendations('Naruto')
-get_recommendations('Bleecu')  # typo test with fuzzy matching
+get_recommendations('Bleech')  # typo test with fuzzy matching
 ```
 
 ---
