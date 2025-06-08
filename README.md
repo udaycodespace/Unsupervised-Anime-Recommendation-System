@@ -17,6 +17,30 @@ Developed during a 4-week AI + Azure Internship (May 2025) by **Edunet Foundatio
 
 ---
 
+## Dataset 📂
+
+This dataset is used in this Python 3 project for analyzing anime rankings, ratings, genres, and other metadata.
+
+**Source**:  
+🔗 https://www.kaggle.com/datasets/quanthan/top-15000-ranked-anime-dataset-update-to-32025
+
+### Modifications Made:
+- Renamed the original file to `anime_2025.csv` for consistency with project naming.
+- Removed the `japanese_name` column due to parsing issues.
+
+### Usage:
+```python
+import pandas as pd
+anime_df = pd.read_csv("anime_2025.csv")
+```
+
+The dataset includes 15,000 entries with key fields like:
+- `name`, `english_name`, `genres`, `score`, `type`, `episodes`, `source`, `rating`, `rank`, `popularity`, etc.
+
+Used for exploratory analysis, vectorization of synopses, and genre-based clustering.
+
+---
+
 ## Methodology 🛠️  
 
 1. **Load Data**: Anime info including synopsis, genres, and scores.  
